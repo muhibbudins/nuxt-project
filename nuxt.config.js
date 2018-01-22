@@ -22,7 +22,7 @@ module.exports = {
   ** Custom SCSS
   */
   css: [
-    { src: '~/assets/scss/navigation.scss', lang: 'scss' }
+    { src: '~/assets/scss/main.scss', lang: 'scss' }
   ],
   /*
   ** Custom Plugin
