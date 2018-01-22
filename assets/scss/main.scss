@@ -1,0 +1,32 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0px -9px 20px #000000;
+
+  .nav {
+    &-item {
+      padding: 0 .5rem;
+    }
+    &-link {
+      padding: 1rem;
+      color: #888888;
+    }
+  }
+}
+
+.content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.sidebar {
+  border: 1px solid #EFEFEF;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer {
+  border-top: 1px solid #EFEFEF;
+  padding: 10px;
+  text-align: center;
+  color: #ABABAB;
+}
