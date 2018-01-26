@@ -1,52 +1,39 @@
 <template>
   <div>
-    <nuxt/>
+    <!-- Navigation -->
+    <Navigation/>
+    <!-- Content -->
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-9 col-lg-9">
+          <!-- Content -->
+          <Banner />
+          <nuxt/>
+        </div>
+        <div class="col-md-3 col-lg-3">
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <h4>Title of sidebar</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, porro repudiandae. Tempora, ab nostrum dolorum temporibus maiores architecto, distinctio dolorem id modi, neque atque ipsam dicta sit eum non. Sed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      Copyright here
+    </div>
   </div>
 </template>
 
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import Navigation from '~/components/navigation.vue'
+import Banner from '~/components/banner.vue'
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
+export default {
+  components: {
+    Navigation,
+    Banner
+  }
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>
