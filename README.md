@@ -1,3 +1,5 @@
+![Preview](https://medium.com/@muhibbudins/nuxt-4-bermain-dengan-vuex-rest-api-7e89bd36a2df)
+
 # Nuxt Project
 
 Example Nuxt.JS project from my tutorial series on medium [Indonesian language 🇮🇩]
