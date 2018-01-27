@@ -1,4 +1,4 @@
-![Preview](https://medium.com/@muhibbudins/nuxt-4-bermain-dengan-vuex-rest-api-7e89bd36a2df)
+![Preview](https://cdn-images-1.medium.com/max/1600/1*RCUtSVL7xdqmNoVpFNZeHQ.gif)
 
 # Nuxt Project
 
