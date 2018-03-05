@@ -29,6 +29,7 @@ module.exports = {
   ** Custom Plugin
    */
   plugins: [
+    { src: '~plugins/persisted.js', ssr: false },
     { src: '~plugins/swiper.js', ssr: false }
   ],
   /*
@@ -71,8 +72,7 @@ function changeLoaderOptions (loaders) {
     for (const loader of loaders) {
       if (loader.loader === 'sass-loader') {
         Object.assign(loader.options, {
-          includePaths: ['./assets'],
-          // data: '@import "_imports";'
+          includePaths: ['./assets']
         })
       }
     }

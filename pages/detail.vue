@@ -15,13 +15,26 @@
 
 <script>
 export default {
-  computed: {
-    article () {
-      const article = this.$store.state.article
-      article.name = article.source ? article.source.name : ''
-
-      return article
+  data () {
+    return {
+      article: {}
     }
+  },
+  methods: {
+    async getData () {
+      await setTimeout(() => {
+        if (this.$store.state && this.$store.state.article.name !== "") {
+          let states = this.$store.state.article
+          states.name = states.source ? states.source.name : ''
+          this.article = states
+        }
+      }, 1000)
+    }
+  },
+  mounted () {
+    this.getData().then(() => {
+      console.log('News loaded')
+    })
   }
 }
 </script>
